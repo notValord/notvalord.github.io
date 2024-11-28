@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const formLinks = [
+            "https://www.google.cz/",
+            "https://www.youtube.com/",
+            "https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana"
+    ];
+
+        function generateRandomForm() {
+            // Generate a random integer between 0 and 2
+            const randomNumber = Math.floor(Math.random() * 3);
+            window.location.href = formLinks[randomNumber];
+        }
+
+        // Call the function when the page loads
+        window.onload = generateRandomForm;
+    </script>
+</head>
+</html>
